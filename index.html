@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<title>Mikhail Mednikh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-sidebar" id="myNavbar">
+            <a class="w3-bar-item button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-home fa-2x"></i>
+            </a>
+            <a href="#portfolio" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-th fa-2x"></i>
+            </a>
+            <a href="#about" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-user fa-2x"></i>
+            </a>
+            <a href="#contact" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-envelope fa-2x"></i>
+            </a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="mobileNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#home" class="w3-bar-item button" onclick="toggleFunction()">HOME</a>
+            <a href="#portfolio" class="w3-bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#about" class="w3-bar-item button" onclick="toggleFunction()">ABOUT Me</a>
+            <a href="#contact" class="w3-bar-item button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle title">
+            <span class="w3-center w3-black w3-xlarge w3-wide">
+                <span class="w3-hide-small">Hello I'm</span>
+                <span> Mikhail Mednikh</span>
+                <br>
+                <span class="w3-hide-small"> full stack web developer</span>
+            </span>
+        </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <div class=" w3-container w3-padding-64" id="portfolio">
+        <div class="section bg1"></div>
+        <br>
+        <h3 class="w3-center">My Projects</h3>
+        <p class="w3-center">
+            <em>Here are some of my latest projects.
+        </p>
+        <br>
+        <!-- Responsive Grid. Three columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="assets/pictures/covid-19.png" alt="COVID-19">
+                            <h2 class="card__title">COVID - 19</h2>
+                            <p class="card__text">The idea of creating this application was to protect people from the virus during the trip, so that people would always be fresh from the latest news in any state.</p>
+                            <p class="card__text"> To create this project we used: HTML5/CSS, vanilla JavaScript and API</p>
+                            <a class="card__btn" href="https://kaitlyn-lynette.github.io/COVID-19-Travel-Information-Project-1/" target="_blank" class="">Demo</a>
+                            <a class="card__btn" href="https://github.com/Kaitlyn-Lynette/COVID-19-Travel-Information-Project-1/tree/html-front" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+            <div class="w3-col m4">
+                <div class="card"> 
+                        <img class="card__img" src="assets/pictures/upkeep1.png" alt="upkeep">
+                        <h2 class="card__title">upkeep</h2>
+                        <p class="card__text">Here our idea was to make it so users could control their financial expenses and income</p>
+                        <p class="card__text"> To create this project we used: HTML5/CSS,  JavaScript - ES6, MySQL, jQuery, Bulma, PassportJs, Sequelize, NodeJS. </p>
+                        <a  class="card__btn" href="https://upkeep-budget-app.herokuapp.com/" target="_blank" class="">Demo</a>
+                        <a class="card__btn" href="https://github.com/kishaprudente/upkeep/tree/front-end" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                      </div>
+            </div>
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="assets/pictures/MindBooster.png" alt="MindBooster">
+                            <h2 class="card__title">MindBooster</h2>
+                            <p class="card__text">The idea of our application was that we wanted to make tests in the form of distinction for any age</p>
+                            <p class="card__text"> To create this project we used: HTML5/CSS, React,  JavaScript - ES6, MongoDB, PassportJs, NodeJS/Express, PWA, mLab, ReactBootstrap, API, JSON Web Token, Redux</p>
+                            <a class="card__btn" href="https://intense-brushlands-65293.herokuapp.com/" target="_blank" class="">Demo</a>
+                            <a class="card__btn" href="https://github.com/plam1234/MindBooster" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <!--Tech Icons-->
+    <div class="w3-row w3-center bg1 w3-padding-16">
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/html.svg">
+            <img class="icon" src="assets/icons/css.svg">
+            <img class="icon" src="assets/icons/javascript.svg">
+            <img class="icon" src="assets/icons/jquery.svg">
+        </div>
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/sass.svg">
+            <img class="icon" src="assets/icons/react.svg">
+            <img class="icon" src="assets/icons/node.svg">
+            <img class="icon" src="assets/icons/express.svg">
+        </div>
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/handlebars.svg">
+            <img class="icon" src="assets/icons/mongodb.svg">
+            <img class="icon" src="assets/icons/mysql.svg">
+            <img class="icon" src="assets/icons/github.svg">
+        </div>
+    </div>
+    <!-- Second Parallax Image with About Text -->
+    <div class="bgimg bgimg-2 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">About Me</span>
+        </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">Mikhail Mednikh</h3>
+        <div class="w3-row">
+            <div class="u-margin-top-medium">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <div class="profile__section-left">
+                        <div class="image-responsive">
+                            <img class="w3-image image-responsive__picture" src="assets/pictures/profile.jpg" alt="Photo of Me" width="500" height="333">
+                            <div class="image-responsive__overlay">
+                                <h2></h2>
+                                <p class="image-responsive__overlay--set1">
+                                  
+                                    <a href="https://github.com/Mikhail1494" target="_blank"><i class="fa fa-github"></i></a>
+                                </p>
+
+                                <p class="image-responsive__overlay--set2">
+                                    <a href="https://www.linkedin.com/in/mikhail-mednikh-7b2416199/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <div class="profile__section-right">
+                        <div class="text-box">
+                            <div class="text-box__section text-box__section-default">
+                                <h4 class="text-box__section--title">About Me</h4>
+                                <div  class="text-box__section--content">
+                                    <p> My work was that I worked with computers, and with computer hardware, I like to build custom computers to order install new drivers and configure Internet networks, I have been doing this for 6 years and all the time I dreamed of trying something new. I was advised try coding courses  Columbia Engineering Coding Boot Camp full stack developer.</p>
+                                </div>
+                            </div>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title"> Hobby</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        My favorite pastime is disassembling, repairing and
+                                        assembling something from electrical engineering,
+                                        work with Adobe Photoshop 2019 CC
+                                        Also, I found myself in coding. I like something to
+                                        do with my own hands. In coding, I like part of the
+                                        design more, but this is not the limit. I would like
+                                        to learn a lot more. In the future I hope to improve
+                                        my coding skills and reach new heights.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">My Skills in coding</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        My skills: HTML, CSS, Sass, Javascript, jQuery, React, Redux, NodeJS, MySQL, and MongoDB.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">Contact Me</span>
+        </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Call me or send me a message</h3>
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> New York, US
+                    <br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (347) 754-8908
+                    <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mmednikh@gmail.com
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <div>Mikhail Mednikh</div>
+    </footer>
+    <script type="text/javascript" src="js/logic.js"></script>
+</body>
+
+</html>

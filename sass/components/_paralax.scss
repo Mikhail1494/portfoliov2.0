@@ -1,0 +1,29 @@
+.bgimg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-1 {
+        background-image: url("../assets/pictures/bg11.png");
+        min-height: 100%;
+    }
+
+    &-2 {
+        background-image: url("../assets/pictures/About.jpg");
+        min-height: 400px;
+    }
+
+    &-3 {
+        background-image: url("../assets/pictures/contact1.jpg");
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
