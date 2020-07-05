@@ -4,7 +4,7 @@ Portfolio made to showcase my projects, about me, and contact info
 
 ## Live Link
 
-https://scotrenz.github.io/
+https://mikhail1494.github.io/portfoliov2.0/
 
 ## Built With
 
